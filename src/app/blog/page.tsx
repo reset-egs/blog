@@ -1,9 +1,7 @@
-// src/app/blog/page.tsx
 import BlogCard from "@/components/BlogCard";
 import {posts} from "@/data/posts";
 
 export default function BlogsPage() {
-    // Sort posts by date (newest first)
     const sortedPosts = [...posts].sort((a, b) =>
         new Date(b.date).getTime() - new Date(a.date).getTime()
     );
@@ -28,8 +26,7 @@ export default function BlogsPage() {
     );
 }
 
-// Add metadata for the page
 export const metadata = {
-    title: 'Blog | Your Site Name',
-    description: 'Read our latest blog posts about web development and technology',
+    title: 'Blog | ctrl+alt+reset',
+    description: 'Read my latest blog posts',
 };
