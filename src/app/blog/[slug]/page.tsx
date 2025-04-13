@@ -2,17 +2,14 @@ import {posts} from "@/data/posts";
 import {notFound} from "next/navigation";
 import {format} from "date-fns";
 import Image from "next/image";
-import {Metadata} from "next";
+import ReactMarkdown from "react-markdown";
 
-type Props = {
-    params: {
-        slug: string;
-    };
-};
-
-// Generate dynamic metadata
-export async function generateMetadata({params}: Props): Promise<Metadata> {
-    const post = posts.find((p) => p.id === params.slug);
+// Generate metadata based on the post
+export async function generateMetadata({params}: {
+    params: Promise<{ slug: string }>;
+}) {
+    const resolvedParams = await params;
+    const post = posts.find((p) => p.id === resolvedParams.slug);
 
     if (!post) {
         return {
@@ -27,8 +24,11 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
     };
 }
 
-export default function BlogPostPage({params}: Props) {
-    const slug = params.slug;
+export default async function BlogPostPage({params}: {
+    params: Promise<{ slug: string }>;
+}) {
+    const resolvedParams = await params;
+    const slug = resolvedParams.slug;
 
     if (!slug) {
         notFound();
@@ -51,7 +51,10 @@ export default function BlogPostPage({params}: Props) {
                 height={400}
                 className="w-full h-64 object-cover mb-8 rounded-lg"
             />
-            <div className="prose">{post.content}</div>
+            <article className="prose prose-lg max-w-none">
+                <ReactMarkdown>{post.content}</ReactMarkdown>
+            </article>
+
         </div>
     );
 }

@@ -1,4 +1,3 @@
-// src/data/posts.ts
 export interface BlogPost {
     id: string;
     title: string;
@@ -10,43 +9,39 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
     {
-        id: "first-post",
-        title: "Getting Started with Next.js",
-        description: "Learn how to build static websites with Next.js and ISR",
-        imageUrl: "https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        date: "2023-08-15T10:00:00Z",
-        content: "This is the full content of the blog post..."
+        id: "welcome-to-my-blog",
+        title: "Welcome to ctrl+alt+reset",
+        description: "A brief introduction to my blog and what to expect.",
+        imageUrl: "https://images.unsplash.com/photo-1650105312043-647cc3ac893e?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        date: "2025-04-13T17:46:20Z",
+        content: `
+## 👋 Welcome to ctrl+alt+reset
+
+Hey there! I'm super excited to welcome you to my little corner of the internet — **ctrl+alt+reset**.
+
+This blog is a space where I plan to share:
+
+- ✍️ Personal insights and reflections  
+- 💻 Coding tips, dev experiments, and tech tutorials  
+- 🧠 Thoughts on topics that interest me, from productivity to philosophy
+- ⚙️ Deep dives into productivity, systems, and tools I love
+
+---
+
+## 🧭 What to Expect
+
+This isn't just a blog; it's a journey. A place where I can share my thoughts, ideas, and experiences as I navigate the ever-evolving world of technology and life.
+
+---
+
+## 🙌 Thanks for Dropping In
+
+Whether you’re a friend, fellow dev, or a curious stranger — thanks for reading. I’d love to hear from you if something here resonates.
+
+Stay tuned for more!
+
+— _Szymon "Reset" Zwara_
+`
+
     },
-    {
-        id: "second-post",
-        title: "Understanding React Hooks",
-        description: "A deep dive into React Hooks and how to use them effectively.",
-        imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        date: "2025-04-11T10:00:00Z",
-        content: "This is the full content of the blog post..."
-    },
-    {
-        id: "third-post",
-        title: "CSS Grid vs Flexbox",
-        description: "Comparing CSS Grid and Flexbox for layout design.",
-        imageUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        date: "2025-03-11T10:00:00Z",
-        content: "This is the full content of the blog post..."
-    },
-    {
-        id: "fourth-post",
-        title: "Building APIs with Node.js",
-        description: "Learn how to create RESTful APIs using Node.js and Express.",
-        imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        date: "2025-01-11T10:00:00Z",
-        content: "This is the full content of the blog post..."
-    },
-    {
-        id: "fifth-post",
-        title: "JavaScript ES6 Features",
-        description: "Explore the new features introduced in ES6.",
-        imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        date: "2025-02-11T10:00:00Z",
-        content: "This is the full content of the blog post..."
-    }
 ];
