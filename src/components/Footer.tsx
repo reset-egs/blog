@@ -107,11 +107,11 @@ const Footer: React.FC = () => {
               <span className="text-cyan-700">Next.js</span>
             </span>
             <span className="flex items-center gap-1.5 border-2 border-black px-2 py-1 bg-pink-100 shadow-[2px_2px_0px_rgba(0,0,0,0.3)]">
-              <TypescriptIcon className="text-pink-700" />
+              <TailwindIcon className="text-pink-700" />
               <span className="text-pink-700">Tailwind</span>
             </span>
             <span className="flex items-center gap-1.5 border-2 border-black px-2 py-1 bg-yellow-100 shadow-[2px_2px_0px_rgba(0,0,0,0.3)]">
-              <TailwindIcon className="text-yellow-700" />
+              <TypescriptIcon className="text-yellow-700" />
               <span className="text-yellow-700">TypeScript</span>
             </span>
           </div>
