@@ -1,20 +1,21 @@
 export interface BlogPost {
-    id: string;
-    title: string;
-    description: string;
-    imageUrl: string;
-    date: string;
-    content: string;
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  date: string;
+  content: string;
 }
 
 export const posts: BlogPost[] = [
-    {
-        id: "hello-world",
-        title: "Welcome to ctrl+alt+reset",
-        description: "A brief introduction to me, my website, and what to expect.",
-        imageUrl: "https://images.unsplash.com/photo-1650105312043-647cc3ac893e?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        date: "2025-04-14T16:04:18Z",
-        content: `
+  {
+    id: "hello-world",
+    title: "Welcome to ctrl+alt+reset",
+    description: "A brief introduction to me, my website, and what to expect.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1650105312043-647cc3ac893e?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "2025-04-14T16:04:18Z",
+    content: `
 ### *Hello, people of the internet!*
 
 I’m super excited to welcome you to **ctrl-alt-reset**—my little corner of the web.
@@ -51,6 +52,6 @@ So, what can you expect from this site?
 Only time will tell.
 
 Until then, tune in and *expect the unexpected*.
-`
-    },
+`,
+  },
 ];
