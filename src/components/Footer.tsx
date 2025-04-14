@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
 
                     <div className="flex gap-3 sm:gap-4">
                         <a
-                            href="https://twitter.com"
+                            href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="border-2 border-black p-2 hover:bg-cyan-300 transition-colors"
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                             </svg>
                         </a>
                         <a
-                            href="https://github.com"
+                            href="https://github.com/reset-egs/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="border-2 border-black p-2 hover:bg-yellow-300 transition-colors"
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
                             </svg>
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/szymon-zwara-6b4349224/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="border-2 border-black p-2 hover:bg-pink-300 transition-colors"
