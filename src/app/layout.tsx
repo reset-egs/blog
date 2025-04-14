@@ -12,9 +12,29 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-    title: "ctrl+alt+reset",
-    description: "A neo-brutalist blog",
-};
+    title: {
+        template: '%s | ctrl+alt+reset',
+        default: 'ctrl+alt+reset',
+    },
+    description: 'Personal website and blog of Szymon Zwara',
+    metadataBase: new URL('https://www.ctrlaltreset.dev'),
+    openGraph: {
+        title: 'ctrl+alt+reset',
+        description: 'Personal website and blog of Szymon Zwara',
+        url: 'https://www.ctrlaltreset.dev',
+        siteName: 'ctrl+alt+reset',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'ctrl+alt+reset',
+            }
+        ],
+        locale: 'en_US',
+        type: 'website',
+    },
+}
 
 export default function RootLayout({
                                        children,
