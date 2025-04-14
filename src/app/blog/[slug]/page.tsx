@@ -41,20 +41,24 @@ export default async function BlogPostPage({params}: {
     }
 
     return (
-        <div className="container mx-auto py-10 px-4 max-w-3xl">
-            <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-            <p className="text-gray-600 mb-8">{format(post.date, "MMM d, yyyy 'at' h:mm a")}</p>
-            <Image
-                src={post.imageUrl}
-                alt={post.title}
-                width={500}
-                height={400}
-                className="w-full h-64 object-cover mb-8 rounded-lg"
-            />
-            <article className="prose prose-lg max-w-none">
-                <ReactMarkdown>{post.content}</ReactMarkdown>
-            </article>
-
+        <div className="container mx-auto py-10 px-4">
+            <div
+                className="max-w-3xl mx-auto bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
+                <Image
+                    src={post.imageUrl}
+                    alt={post.title}
+                    width={1000}
+                    height={500}
+                    className="w-full h-64 object-cover border-b-4 border-black"
+                />
+                <div className="p-6 md:p-8">
+                    <h1 className="text-4xl font-bold mb-2">{post.title}</h1>
+                    <p className="text-gray-600 mb-6">{format(new Date(post.date), "MMM d, yyyy 'at' h:mm a")}</p>
+                    <article className="prose prose-lg max-w-none">
+                        <ReactMarkdown>{post.content}</ReactMarkdown>
+                    </article>
+                </div>
+            </div>
         </div>
     );
 }

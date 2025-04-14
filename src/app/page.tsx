@@ -93,7 +93,15 @@ export default function Home() {
 
             {/* Newsletter */}
             <section
-                className="border-2 border-black bg-yellow-100 p-5 sm:p-8 shadow-[5px_5px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+                className="border-2 border-black bg-yellow-100 p-5 sm:p-8 shadow-[5px_5px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_rgba(0,0,0,1)] relative">
+                {/* Coming Soon Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <div
+                        className="bg-pink-300 border-2 border-black py-2 px-4 rotate-[-5deg] shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                        <span className="font-bold text-lg sm:text-xl">Coming Soon</span>
+                    </div>
+                </div>
+
                 <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Stay Updated</h2>
                 <p className="mb-4 sm:mb-6">Subscribe to get notified about new posts and updates.</p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -101,9 +109,11 @@ export default function Home() {
                         className="w-full sm:w-auto sm:max-w-xs md:w-96 border-black border-2 p-2 sm:p-2.5 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-[#FFA6F6] active:shadow-[2px_2px_0px_rgba(0,0,0,1)]"
                         placeholder="you@example.com"
                         type="email"
+                        disabled
                     />
                     <button
-                        className="px-6 py-2 border-black border-2 bg-pink-300 hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none transition-all font-medium"
+                        className="px-6 py-2 border-black border-2 bg-pink-300 hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none transition-all font-medium opacity-70"
+                        disabled
                     >
                         Subscribe
                     </button>
