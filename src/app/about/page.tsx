@@ -1,5 +1,4 @@
 // src/app/about/page.tsx
-import Link from "next/link";
 import {Metadata} from "next";
 import Image from "next/image";
 import Reset from "../../../public/Reset.jpg"
@@ -37,7 +36,8 @@ export default function About() {
                         </p>
                         <p className="mb-4">
                             I started <span className="font-bold">ctrl+alt+reset</span> as a place to document my
-                            developer journey, share insights software development, and share opinions about anything
+                            developer journey, share insights about software development, and share opinions about
+                            anything
                             that interests me.
                         </p>
                         <p>
@@ -89,19 +89,26 @@ export default function About() {
             </section>
 
             {/* Contact CTA */}
-            <section className="border-2 border-black bg-pink-100 p-8 shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+            <section className="border-2 border-black bg-pink-100 p-8 shadow-[8px_8px_0px_rgba(0,0,0,1)] relative">
+                {/* Coming Soon Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <div
+                        className="bg-pink-300 border-2 border-black py-2 px-4 rotate-[-5deg] shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                        <span className="font-bold text-lg sm:text-xl">Coming Soon</span>
+                    </div>
+                </div>
+
                 <h2 className="text-3xl font-bold mb-6 inline-block border-b-4 border-pink-300 pb-1">
                     Let's Connect
                 </h2>
                 <p className="mb-6">
                     Have a question or just want to say hi? I'd love to hear from you!
                 </p>
-                <Link
-                    href="/contact"
-                    className="inline-block px-6 py-3 border-black border-2 bg-pink-300 hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all font-medium"
+                <span
+                    className="inline-block px-6 py-3 border-black border-2 bg-pink-300 hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all font-medium opacity-70"
                 >
                     Get In Touch
-                </Link>
+                </span>
             </section>
         </main>
     );
