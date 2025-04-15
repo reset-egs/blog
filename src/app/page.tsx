@@ -13,7 +13,6 @@ export default function Home() {
 
   return (
     <main className="container mx-auto py-6 sm:py-10 px-4">
-      <NowPlaying />
       {/* Hero Section */}
       <section className="mb-10 sm:mb-16 border-2 border-black bg-white p-5 sm:p-8 shadow-[5px_5px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">
@@ -29,6 +28,13 @@ export default function Home() {
         >
           Learn More
         </Link>
+      </section>
+      {/* Now Playing section */}
+      <section className="mb-10 sm:mb-16">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 inline-block border-b-4 border-yellow-300 pb-1">
+          What I'm Listening To
+        </h2>
+        <NowPlaying />
       </section>
       {/* Featured Post */}
       {featuredPost && (

@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
 
-const { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN } =
-  process.env;
-
 interface Artist {
   name: string;
 }
+
+const { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN } =
+  process.env;
 
 const basic = Buffer.from(
   `${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`,
@@ -24,39 +24,63 @@ const getAccessToken = async () => {
     }),
   });
 
-  return res.json();
-};
+  const json = await res.json();
+  if (!res.ok) {
+    console.error("Token error:", json);
+    throw new Error("Failed to get access token");
+  }
 
-const fetchNowPlaying = (accessToken: string) => {
-  return fetch("https://api.spotify.com/v1/me/player/currently-playing", {
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-    },
-  });
-};
-
-const fetchRecentlyPlayed = (accessToken: string) => {
-  return fetch("https://api.spotify.com/v1/me/player/recently-played?limit=1", {
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-    },
-  });
+  return json;
 };
 
 export async function GET() {
   try {
     const { access_token } = await getAccessToken();
 
-    const response = await fetchNowPlaying(access_token);
-    let songData = await response.json();
+    const nowPlayingRes = await fetch(
+      "https://api.spotify.com/v1/me/player/currently-playing",
+      {
+        headers: {
+          Authorization: `Bearer ${access_token}`,
+        },
+      },
+    );
 
-    const isPlaying = response.status === 200 && songData?.item;
+    let isPlaying = false;
+    let songData;
 
-    if (!isPlaying) {
-      const recent = await fetchRecentlyPlayed(access_token).then((res) =>
-        res.json(),
+    // Only parse JSON if there's content
+    if (
+      nowPlayingRes.status === 200 &&
+      nowPlayingRes.headers.get("content-length") !== "0"
+    ) {
+      const json = await nowPlayingRes.json();
+      if (json?.item) {
+        songData = json.item;
+        isPlaying = true;
+      }
+    }
+
+    // Fallback to recently played
+    if (!songData) {
+      const recentRes = await fetch(
+        "https://api.spotify.com/v1/me/player/recently-played?limit=1",
+        {
+          headers: {
+            Authorization: `Bearer ${access_token}`,
+          },
+        },
       );
-      songData = recent.items?.[0]?.track;
+
+      const recent = await recentRes.json();
+      songData = recent?.items?.[0]?.track;
+    }
+
+    if (!songData) {
+      return NextResponse.json(
+        { error: "No song data available" },
+        { status: 404 },
+      );
     }
 
     const track = {
@@ -69,7 +93,11 @@ export async function GET() {
     };
 
     return NextResponse.json(track);
-  } catch (error) {
-    console.error(error);
+  } catch (err) {
+    console.error("API error:", err);
+    return NextResponse.json(
+      { error: "Internal Server Error" },
+      { status: 500 },
+    );
   }
 }
