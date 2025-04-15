@@ -1,20 +1,19 @@
-// src/app/page.tsx
 import { posts } from "@/data/posts";
 import Link from "next/link";
 import BlogCard from "../components/BlogCard";
 import Image from "next/image";
+import NowPlaying from "../components/NowPlaying";
 
 export default function Home() {
-  // Sort posts by date (newest first) and get only the latest 4
   const latestPosts = [...posts]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 4);
 
-  // Get the most recent post for the featured section
   const featuredPost = latestPosts[0];
 
   return (
     <main className="container mx-auto py-6 sm:py-10 px-4">
+      <NowPlaying />
       {/* Hero Section */}
       <section className="mb-10 sm:mb-16 border-2 border-black bg-white p-5 sm:p-8 shadow-[5px_5px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">
@@ -31,7 +30,6 @@ export default function Home() {
           Learn More
         </Link>
       </section>
-
       {/* Featured Post */}
       {featuredPost && (
         <section className="mb-10 sm:mb-16">
@@ -65,7 +63,6 @@ export default function Home() {
           </div>
         </section>
       )}
-
       {/* Latest Posts - Showing latest 4 posts (including the featured one) */}
       <section className="mb-10 sm:mb-16">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 inline-block border-b-4 border-yellow-300 pb-1">
