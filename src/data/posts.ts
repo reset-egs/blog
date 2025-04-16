@@ -141,11 +141,9 @@ It also forces you to think differently about design. When you're not relying on
 ### Further Reading
 If you’re interested in diving deeper into neo-brutalism, check out these great reads:
 
-- [The Rise of Brutalism in Web Design – UX Collective](https://uxdesign.cc/the-rise-of-brutalism-in-web-design-8420b36a3cf1)
-- [Why Neo-Brutalism is Taking Over the Web – Webflow Blog](https://webflow.com/blog/neo-brutalism)
+- [A deep dive into brutalism – Webflow Blog](https://webflow.com/blog/brutalism)
+- [What is the difference between Brutalism and Neubrutalism in UI Design? – CC Creative](https://www.cccreative.design/blogs/brutalism-vs-neubrutalism-in-ui-design)
 - [Brutalist Websites – Showcase Gallery](https://brutalistwebsites.com/)
-- [Neo-Brutalism UI by Rauno Freiberg](https://rauno.me/notes/neo-brutalism-ui)
-- [Designing in Neo-Brutalist Style – Smashing Magazine](https://www.smashingmagazine.com/2023/03/designing-neo-brutalist-style/)
 
 ---
 Want to see how to implement a neo-brutalist UI in your own website? In one of my next posts I will go in-depth on how to achieve that utilizing powerful utility classes from Tailwind CSS. 
