@@ -20,7 +20,7 @@ export default function Home() {
           ctrl+alt+<span className="bg-pink-300 px-1">reset</span>
         </h1>
         <p className="text-lg sm:text-xl mb-4 sm:mb-6">
-          Thoughts and opinions on software development, technology, politics,
+          Thoughts and opinions on software development, technology, science,
           and everything in between.
         </p>
         <Link
