@@ -2,6 +2,10 @@
 
 @plugin "@tailwindcss/typography";
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --background: #a5b4fb;
     --foreground: black;

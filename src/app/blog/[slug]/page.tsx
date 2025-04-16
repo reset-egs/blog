@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
+import slugify from "slugify";
 
 // Generate metadata based on the post
 export async function generateMetadata({
@@ -70,7 +71,36 @@ export default async function BlogPostPage({
             {format(new Date(post.date), "MMM d, yyyy 'at' h:mm a")}
           </p>
           <article className="prose prose-lg max-w-none">
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+            <ReactMarkdown
+              components={{
+                h1: ({ ...props }) => {
+                  const text = String(props.children).replace(
+                    /<\/?[^>]+(>|$)/g,
+                    "",
+                  );
+                  const id = slugify(text, { lower: true, strict: true });
+                  return <h1 id={id} {...props} />;
+                },
+                h2: ({ ...props }) => {
+                  const text = String(props.children).replace(
+                    /<\/?[^>]+(>|$)/g,
+                    "",
+                  );
+                  const id = slugify(text, { lower: true, strict: true });
+                  return <h2 id={id} {...props} />;
+                },
+                h3: ({ ...props }) => {
+                  const text = String(props.children).replace(
+                    /<\/?[^>]+(>|$)/g,
+                    "",
+                  );
+                  const id = slugify(text, { lower: true, strict: true });
+                  return <h3 id={id} {...props} />;
+                },
+              }}
+            >
+              {post.content}
+            </ReactMarkdown>
           </article>
         </div>
       </div>

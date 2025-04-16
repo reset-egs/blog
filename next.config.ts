@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "neo-brutalism-ui-library.vercel.app",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
   webpack(config) {
