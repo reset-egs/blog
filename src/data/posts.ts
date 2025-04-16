@@ -75,7 +75,7 @@ Welcome to the world of **neo-brutalism**!
 7. [My Take on Neo-Brutalism](#my-take-on-neo-brutalism)
 8. [Further Reading](#further-reading)
 ### What is Neo-Brutalism?
-Neo-brutalism is a web-design trend that deliberately rejects sleek, overly polished aesthetics in favor of something raw and bold. It’s characterized by harsh contrast, unstyled HTML elements, mono or system fonts, visible borders, and layouts that feel like they weren’t designed--even though they very much were. 
+Neo-brutalism is a web-design trend that deliberately rejects sleek, overly polished aesthetics in favor of something raw and bold. It’s characterized by harsh contrast, unstyled HTML elements, mono or system fonts, visible borders, and layouts that feel like they weren’t designed — even though they very much were. 
 
 It's not about being ugly—it's actually quite the opposite. Most importantly, it's about being honest, functional and attention-grabbing. Think of it as the digital equivalent of brutalist architecture, but with \`<div>\`s instead of concrete slabs.
 ### A Brief History
