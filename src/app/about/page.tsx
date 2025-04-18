@@ -5,7 +5,7 @@ import Image from "next/image";
 import Reset from "../../../public/Reset.jpg";
 
 export const metadata: Metadata = {
-  title: "About | ctrl+alt+reset",
+  title: "About",
   description: "About reset and the ctrl+alt+reset blog",
 };
 

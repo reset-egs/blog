@@ -81,6 +81,14 @@ export default function ContactPage() {
 }
 
 export const metadata = {
-  title: "Contact | ctrl+alt+reset",
+  title: "Contact Me",
   description: "Get in touch with me through the contact form or social media.",
+  alternates: {
+    canonical: "https://www.ctrlaltreset.dev/contact",
+  },
+  openGraph: {
+    title: "Contact Me | ctrl+alt+reset",
+    description:
+      "Get in touch with me through the contact form or social media.",
+  },
 };
