@@ -150,4 +150,79 @@ Want to see how to implement a neo-brutalist UI in your own website? In one of m
 
 Stay tuned!`,
   },
+  {
+    id: "jwst-new-era-in-astronomy",
+    title: "A New Era in Astronomy: How JWST is Changing Space Science",
+    description:
+      "Discover how the James Webb Space Telescope is revolutionizing our understanding of the universe.",
+    imageUrl:
+      "https://scitechdaily.com/images/The-James-Webb-Space-Telescope-1-scaled.jpg",
+    date: "2025-06-12T11:34:32",
+    content: `# A New Era in Astronomy: How JWST is Changing Space Science
+
+It's been over 4 years since the launch of the James Webb Space Telescope on December 25th, 2021, and although this might seem like a very short time on an astronomical scale, the joint effort of multiple space agencies has without a doubt made *astronomically* big discoveries.
+
+Positioned at the second Lagrange point (L2), approximately 1.5 million kilometers from Earth, JWST offers an unprecedented view into the cosmos, capturing light from the earliest galaxies to the atmospheres of distant exoplanets.
+
+## Table of Contents
+
+1. [What is the James Webb Space Telescope?](#what-is-the-james-webb-space-telescope)
+2. [A Brief History of the Mission](#a-brief-history-of-the-mission)
+3. [Unveiling the Early Universe](#unveiling-the-early-universe)
+4. [Exploring Exoplanets and Alien Atmospheres](#exploring-exoplanets-and-alien-atmospheres)
+5. [Star Birth and Stellar Death](#star-birth-and-stellar-death)
+6. [Looking Forward](#looking-forward)
+
+## What is the James Webb Space Telescope?
+
+JWST is a collaborative project between NASA, the European Space Agency (ESA), and the Canadian Space Agency (CSA). Equipped with a 6.5-meter primary mirror and advanced instruments like the Near Infrared Camera (NIRCam) and Mid-Infrared Instrument (MIRI), JWST observes the universe in infrared wavelengths, allowing it to peer through cosmic dust and uncover phenomena previously hidden from view.
+
+![JWST Full Deployment Illustration](https://stsci-opo.org/STScI-01EVSZZ70PZWSBHHPA5PBYT2HK.png)
+*Image: JWST Full Deployment Illustration 
+Credit: [NASA, ESA, CSA, Joyce Kang (STScI)](https://webbtelescope.org/contents/media/images/4202-Image)*
+
+## A Brief History of the Mission
+
+Although it launched in 2021, the story of the James Webb Space Telescope began decades earlier. Initial planning started as far back as 1996, with a vision to build a successor to the Hubble Space Telescope.
+
+Over the years, JWST faced technical challenges, redesigns, and delays, but the scientific goals remained ambitious: to explore the universe’s first galaxies, understand star formation, and analyze the atmospheres of exoplanets. After 25 years of development and contributions from scientists and engineers around the globe, JWST finally reached its destination—ready to deliver on its cosmic promise.
+
+## Unveiling the Early Universe
+
+One of JWST’s most groundbreaking contributions is its ability to observe galaxies formed just a few hundred million years after the Big Bang. Using its sensitive infrared capabilities, JWST has pushed the boundaries of observational cosmology, capturing detailed images of ancient galaxies that reveal surprising levels of structure and maturity.
+
+![Deep Field - SMACS 0723](https://stsci-opo.org/STScI-01G8H1NK4W8CJYHF2DDFD1W0DQ.png)
+*Image: SMACS 0723 - JWST’s First Deep Field  
+Credit: [NASA, ESA, CSA, STScI](https://webbtelescope.org/contents/media/images/2022/035/01G7DCWB7137MYJ05CSH1Q5Z1Z)*
+
+These observations challenge existing theories about how quickly galaxies formed and evolved in the early universe.
+
+## Exploring Exoplanets and Alien Atmospheres
+
+Beyond distant galaxies, JWST is also transforming our understanding of exoplanets—planets orbiting stars outside our solar system. Its instruments can detect the faint signatures of molecules like water vapor, carbon dioxide, and methane in exoplanet atmospheres.
+
+In 2023, JWST detected the first definitive evidence of carbon-based molecules in the atmosphere of K2-18 b, a super-Earth exoplanet located about 120 light-years away.
+
+![Exoplanet Transmission Spectrum](https://stsci-opo.org/STScI-01H9RF3TQE6XA9X01KXXJ351Z6.png)
+*Image: JWST captures atmospheric composition of K2-18 b  
+Credit: [NASA, ESA, CSA, Joseph Olmsted (STScI)](https://webbtelescope.org/contents/media/images/2023/139/01H9RF0CCN4MZYDG56Q7K33WQV)*
+
+These findings mark a crucial step toward answering the age-old question: **Are we alone in the universe?**
+
+## Star Birth and Stellar Death
+
+JWST's high-resolution imaging allows scientists to witness the full lifecycle of stars—from their birth in dense stellar nurseries to their dramatic deaths as supernovae.
+
+![Pillars of Creation (JWST)](https://stsci-opo.org/STScI-01GFNN3PWJMY4RQXKZ585BC4QH.png)
+*Image: Pillars of Creation in the Eagle Nebula, as seen by JWST  
+Credit: [NASA, ESA, CSA, STScI](https://webbtelescope.org/contents/media/images/2022/052/01GF423GBQSK6ANC89NTFJW8VM)*
+
+Its observations of the iconic *Pillars of Creation*, which is my favorite image taken by the telescope, have unveiled previously unseen young stars forming within dense clouds of gas and dust. Meanwhile, JWST’s look into supernova remnants provides crucial information on how the elements necessary for life—like carbon and oxygen—are dispersed throughout the galaxy.
+
+## Looking Forward
+
+In just a few short years, the James Webb Space Telescope has revolutionized astronomy and opened new windows into the cosmos. It has not only confirmed long-standing theories but also raised profound new questions.
+
+More than just a telescope, JWST is a **time machine**, a **chemical lab**, and a **cosmic storyteller**. It reminds us that exploration is not only about looking outward—but also about understanding who we are and where we come from in the grand scheme of the universe.`,
+  },
 ];
