@@ -158,8 +158,7 @@ Stay tuned!`,
     imageUrl:
       "https://images.prismic.io/igspace/13d0c316-0a7f-45e5-b204-ac296572ceeb_JWT+2.jpg",
     date: "2025-06-12T11:34:32",
-    content: `# A New Era in Astronomy: How JWST is Changing Space Science
-
+    content: `
 It's been over 4 years since the launch of the James Webb Space Telescope on December 25th, 2021, and although this might seem like a very short time on an astronomical scale, the joint effort of multiple space agencies has without a doubt made *astronomically* big discoveries.
 
 Positioned at the second Lagrange point (L2), approximately 1.5 million kilometers from Earth, JWST offers an unprecedented view into the cosmos, capturing light from the earliest galaxies to the atmospheres of distant exoplanets.
