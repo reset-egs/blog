@@ -155,7 +155,8 @@ Stay tuned!`,
     title: "A New Era in Astronomy: How JWST is Changing Space Science",
     description:
       "Discover how the James Webb Space Telescope is revolutionizing our understanding of the universe.",
-    imageUrl: "https://stsci-opo.org/STScI-01EVVB9M8ZF9X37KSX89HAR8AW.png",
+    imageUrl:
+      "https://images.prismic.io/igspace/13d0c316-0a7f-45e5-b204-ac296572ceeb_JWT+2.jpg",
     date: "2025-06-12T11:34:32",
     content: `# A New Era in Astronomy: How JWST is Changing Space Science
 
@@ -177,7 +178,7 @@ Positioned at the second Lagrange point (L2), approximately 1.5 million kilomete
 JWST is a collaborative project between NASA, the European Space Agency (ESA), and the Canadian Space Agency (CSA). Equipped with a 6.5-meter primary mirror and advanced instruments like the Near Infrared Camera (NIRCam) and Mid-Infrared Instrument (MIRI), JWST observes the universe in infrared wavelengths, allowing it to peer through cosmic dust and uncover phenomena previously hidden from view.
 
 ![JWST Full Deployment Illustration](https://stsci-opo.org/STScI-01EVSZZ70PZWSBHHPA5PBYT2HK.png)
-*Image: JWST Full Deployment Illustration 
+*Image: JWST Full Deployment Illustration  
 Credit: [NASA, ESA, CSA, Joyce Kang (STScI)](https://webbtelescope.org/contents/media/images/4202-Image)*
 
 ## A Brief History of the Mission
