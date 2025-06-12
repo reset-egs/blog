@@ -155,8 +155,7 @@ Stay tuned!`,
     title: "A New Era in Astronomy: How JWST is Changing Space Science",
     description:
       "Discover how the James Webb Space Telescope is revolutionizing our understanding of the universe.",
-    imageUrl:
-      "https://images.prismic.io/igspace/13d0c316-0a7f-45e5-b204-ac296572ceeb_JWT+2.jpg?auto=compress%2Cformat",
+    imageUrl: "https://stsci-opo.org/STScI-01EVVB9M8ZF9X37KSX89HAR8AW.png",
     date: "2025-06-12T11:34:32",
     content: `# A New Era in Astronomy: How JWST is Changing Space Science
 
